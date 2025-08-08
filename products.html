@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة المنتجات - متجر الملابس والإكسسوارات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" role="navigation">
+      <div class="logo"><a href="home.html">متجر الأناقة</a></div>
+      <ul class="nav-links">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="cart.html">السلة</a></li>
+        <li><a href="checkout.html">الدفع</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+        <button id="search-btn">بحث</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-listing">
+      <h1>قائمة المنتجات</h1>
+    
+      <div class="filters">
+        <label for="filter-category">اختر الفئة:</label>
+        <select id="filter-category">
+          <option value="all">الكل</option>
+          <option value="women">ملابس نسائية</option>
+          <option value="men">ملابس رجالية</option>
+          <option value="accessories">إكسسوارات</option>
+        </select>
+
+        <label for="sort">ترتيب حسب:</label>
+        <select id="sort">
+          <option value="default">افتراضي</option>
+          <option value="price-asc">السعر: من الأقل إلى الأعلى</option>
+          <option value="price-desc">السعر: من الأعلى إلى الأقل</option>
+        </select>
+      </div>
+
+      <div class="grid">
+        
+        <div class="product-card" data-category="women">
+          <img src="Images\P01009481.avif" alt="فستان صيفي">
+          <h2><a href="Images\P01009481.avif">فستان صيفي</a></h2>
+          <p class="price">$39.99</p>
+          <button class="add-to-cart" data-id="1">أضف إلى السلة</button>
+        </div>
+        
+        <div class="product-card" data-category="women">
+          <img src="Images\P01012575.avif" alt="قميص نسائي">
+          <h2><a href="Images\P01012575.avif">قميص نسائي</a></h2>
+          <p class="price">$29.99</p>
+          <button class="add-to-cart" data-id="2">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-category="men">
+          <img src="Images\71N4qXop2UL._AC_SY606_.jpg" alt="قميص رجالي">
+          <h2><a href="Images\71N4qXop2UL._AC_SY606_.jpg">قميص رجالي</a></h2>
+          <p class="price">$24.99</p>
+          <button class="add-to-cart" data-id="3">أضف إلى السلة</button>
+        </div>
+      
+        <div class="product-card" data-category="men">
+          <img src="Images\71C59NJwxxL._AC_SX569_.jpg" alt="بنطال جينز رجالي">
+          <h2><a href="Images\71C59NJwxxL._AC_SX569_.jpg">بنطال جينز رجالي</a></h2>
+          <p class="price">$39.99</p>
+          <button class="add-to-cart" data-id="5">أضف إلى السلة</button>
+        </div>
+      
+        <div class="product-card" data-category="accessories">
+          <img src="Images\71ICJkNgmaL._AC_SX679_.jpg" alt="ساعة يد أنيقة">
+          <h2><a href="Images\71ICJkNgmaL._AC_SX679_.jpg">ساعة يد أنيقة</a></h2>
+          <p class="price">$59.99</p>
+          <button class="add-to-cart" data-id="4">أضف إلى السلة</button>
+        </div>
+        
+        <div class="product-card" data-category="accessories">
+          <img src="Images\71uHVZAm4gS._AC_SY695_.jpg" alt="حقيبة يد أنيقة">
+          <h2><a href="Images\71uHVZAm4gS._AC_SY695_.jpg">حقيبة يد أنيقة</a></h2>
+          <p class="price">$69.99</p>
+          <button class="add-to-cart" data-id="6">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-category="women">
+          <img src="Images\P00998290.avif" alt="تنورة أنيقة">
+          <h2><a href="Images\P00998290.avif">تنورة أنيقة</a></h2>
+          <p class="price">$34.99</p>
+          <button class="add-to-cart" data-id="7">أضف إلى السلة</button>
+        </div>
+        
+        <div class="product-card" data-category="men">
+          <img src="Images\51JT4aIlAHL._AC_SX679_.jpg" alt="سترة رجالية">
+          <h2><a href="Images\51JT4aIlAHL._AC_SX679_.jpg">سترة رجالية</a></h2>
+          <p class="price">$54.99</p>
+          <button class="add-to-cart" data-id="8">أضف إلى السلة</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 متجر الأناقة. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

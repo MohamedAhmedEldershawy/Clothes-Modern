@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation">
+      <div class="logo"><a href="home.html">متجر الأناقة</a></div>
+      <ul class="nav-links">
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="cart.html" class="active">السلة</a></li>
+        <li><a href="checkout.html">الدفع</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+        <button id="search-btn">بحث</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="cart-container">
+      <h1 style="text-align:center; margin-bottom: 28px; color:#f39c12; letter-spacing:1px;">سلة التسوق <span style="font-size:0.8em; color:#888;">🛒</span></h1>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>المنتج</th>
+            <th>السعر</th>
+            <th>الكمية</th>
+            <th>الإجمالي</th>
+            <th>حذف</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- سيتم تعبئة المنتجات هنا بواسطة جافاسكريبت -->
+        </tbody>
+      </table>
+      <div class="cart-summary">
+        <h2>ملخص الطلب <span style="font-size:1em; color:#fff;">📦</span></h2>
+        <p>إجمالي المنتجات: <span id="total-items">0</span></p>
+        <p>الإجمالي النهائي: <span id="total-price">0</span> ج.م</p>
+        <button id="checkout-btn">إتمام الشراء <span style="font-size:1.1em;">💳</span></button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 متجر الأناقة. جميع الحقوق محفوظة.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

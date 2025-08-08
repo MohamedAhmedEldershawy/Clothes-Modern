@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل المنتج</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="home.html">متجري</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="product-listing.html">المنتجات</a></li>
+      <li><a href="cart.html">السلة</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+      <button id="search-btn">بحث</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="product-detail">
+      <div class="product-image">
+        <img src="images/product-detail.jpg" alt="اسم المنتج">
+      </div>
+      <div class="product-info">
+        <h1>اسم المنتج</h1>
+        <p class="price">$49.99</p>
+        <p class="description">
+          هذا وصف تفصيلي للمنتج يوضح خصائصه ومميزاته وكيف يمكن استخدامه بطريقة فعالة.
+        </p>
+        <button class="add-to-cart" data-id="detail-001">أضف إلى السلة</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
